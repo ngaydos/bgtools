@@ -1,4 +1,3 @@
-rolls = []
 from roll_stats import *
 import matplotlib.pyplot as plt
 
@@ -18,6 +17,7 @@ def count_to_16():
                 acc += 1
     return rollnumber
 
+'''tests how many rolls are needed and returns a histogram after 10,000 tests'''
 counts = []
 for i in range(10000):
     counts.append(count_to_16())
